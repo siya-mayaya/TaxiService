@@ -24,6 +24,8 @@ namespace TaxiServiceOne
                 driver.FindElement(By.Id(element)).Click();
             if (elementType == "Name")
                 driver.FindElement(By.Name(element)).Click();
+            if (elementType == "ClassName")
+                driver.FindElement(By.ClassName(element)).Click();
         }
 
         public static void SelectDropDowns(IWebDriver driver, string element, string value, string elementType)
